@@ -9,3 +9,11 @@ header .logo {
     left: 20px;
     height: 100%;
 }
+header .avaliable {
+    background: #ff545f;
+}
+header #api_status {
+    background: #cccccc;
+    float: right;
+    border-radius: 20px;
+}
