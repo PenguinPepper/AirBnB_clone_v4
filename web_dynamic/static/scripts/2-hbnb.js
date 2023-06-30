@@ -7,5 +7,14 @@ $(document).ready( function() {
                 if(input.checked != true) {
                         wanted.pop($("input#amenty_id").val());
                 }
+		$("div#amenities h4").val(wanted);
         }
+	$.get("http://0.0.0.0:5001/api/v1/status/", function(data, tstatus) {
+		if(tstatus === "success") {
+			$("div#api_status").addClass("available");
+		}
+		else {
+			$("div#api_status").removeClass("available");
+		}
+	})
 });
