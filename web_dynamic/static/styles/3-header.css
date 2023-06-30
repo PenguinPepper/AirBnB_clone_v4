@@ -16,4 +16,5 @@ header #api_status {
     background: #cccccc;
     float: right;
     border-radius: 20px;
+    border-right: 30px;
 }
